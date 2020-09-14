@@ -22,6 +22,7 @@
     width: inherit;
     height: inherit;
     opacity: 0;
+    -webkit-animation: slideMe 70s infinite;
     animation: slideMe 70s infinite;
 }
 
@@ -29,6 +30,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    -webkit-animation: zoomMe 70s infinite;
     animation: zoomMe 70s infinite;
 }
 
