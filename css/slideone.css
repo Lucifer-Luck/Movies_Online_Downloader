@@ -36,31 +36,37 @@
 
 .slide-pic.one,
 .slide-pic.one img {
+    -webkit-animation-delay: 0s;
     animation-delay: 0s;
 }
 
 .slide-pic.two,
 .slide-pic.two img {
+    -webkit-animation-delay: 10s;
     animation-delay: 10s;
 }
 
 .slide-pic.three,
 .slide-pic.three img {
+    -webkit-animation-delay: 20s;
     animation-delay: 20s;
 }
 
 .slide-pic.four,
 .slide-pic.four img {
+    -webkit-animation-delay: 30s;
     animation-delay: 30s;
 }
 
 .slide-pic.five,
 .slide-pic.five img {
+    -webkit-animation-delay: 40s;
     animation-delay: 40s;
 }
 
 .slide-pic.six,
 .slide-pic.six img {
+    -webkit-animation-delay: 50s;
     animation-delay: 50s;
 }
 /*End Slide Background*/
