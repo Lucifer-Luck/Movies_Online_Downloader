@@ -1,0 +1,742 @@
+/*Start Mobile Title*/
+.mobile-title {
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 50rem;
+    transform: translateX(-50%);
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: .5rem 0;
+}
+
+.mobile-title h1 {
+    font-family: var(--title-font);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.mobile-title h2 {
+    font-size: 2rem;
+}
+
+.mobile-title h3 {
+    font-size: 1.5rem;
+}
+/*End Mobile Title*/
+
+
+
+
+/*Start Content*/
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*End Content*/
+
+
+
+
+/*Start Poster*/
+.poster {
+    width: 25rem;
+    height: 47rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.poster img {
+    width: 100%;
+    height: 35rem;
+    margin-bottom: 1rem;
+    border: 2px solid #fff;
+    border-radius: .5rem;
+}
+/*End Poster*/
+
+
+
+
+/*Start Social Media*/
+.social-media {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.social-media a {
+    margin-right: 1rem;
+}
+
+.social-media a:last-child {
+    margin-right: 0;
+}
+
+.social-media a i {
+    font-size: 3rem;
+    color: #fff;
+    padding: .5rem;
+    transition: .5s;
+}
+
+.social-media a:first-child i {
+    padding: .5rem 1rem;
+}
+
+.social-media a:last-child i {
+    padding: .5rem .2rem;
+}
+
+.social-media a .fa-facebook-f {
+    background-color: #3B5998;
+}
+
+.social-media a .fa-twitter {
+    background-color: #00acee;
+}
+
+.social-media a .fa-google-plus-g {
+    background-color: #dd4b39;
+}
+
+.social-media a:hover i,
+.social-media a:focus i {
+    color: #000;
+    background-color: #fff;
+}
+/*End Social Media*/
+
+
+
+
+/*Start Download*/
+.download {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--download-color);
+    padding: .5rem 0;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.download a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.8rem;
+    transition: .5s;
+}
+
+.download a span i {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.download:hover {
+    background-color: #fff;
+}
+
+.download:hover a {
+    color: #000;
+}
+/*End Download*/
+
+
+
+
+/*Start Details*/
+.details {
+    width: 30rem;
+    height: 37rem;
+    margin-bottom: 1rem;
+}
+/*End Details*/
+
+
+
+
+/*Start Title*/
+.title {
+    transform: translateX(-100%);
+}
+/*End Title*/
+
+
+
+
+/*Start Synopsis*/
+.synopsis {
+    transform: translateY(-40%);
+}
+
+.synopsis h1 {
+    font-size: 2.8rem;
+}
+
+.synopsis p {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+/*End Synopsis*/
+
+
+
+
+/*Start Trailer*/
+.trailer {
+    transform: translateY(-128%);
+}
+
+.trailer a {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.trailer a span i {
+    font-size: 4.5rem;
+    margin-right: 1rem;
+    transition: .5s;
+}
+
+.trailer a:hover {
+    color: var(--download-color);
+}
+/*End Trailer*/
+
+
+
+
+/*Start Scene*/
+.scene {
+    transform: translateY(-55%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene img {
+    width: 10rem;
+    height: 8rem;
+    margin-right: .5rem;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+}
+
+.scene img:last-child {
+    margin-right: 0;
+}
+/*End Scene*/
+
+
+
+
+/*Start More Info*/
+.more-info {
+    width: 30rem;
+    height: 52rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*End More Info*/
+
+
+
+
+/*Start DVD*/
+.dvd {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+
+.dvd img {
+    width: 100%;
+    height: 100%;
+}
+/*End DVD*/
+
+
+
+
+/*Start Quality*/
+.quality {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quality h1 {
+    width: 75%;
+    height: 4rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+
+.quality a {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .6rem 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    background-color: rgba(0, 0, 0, .7);
+    border: 1px solid #fff;
+    color: #fff;
+    transition: .5s;
+}
+
+.quality a span i {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.quality a:hover {
+    border-color: var(--download-color);
+    color: var(--download-color);
+}
+/*End Quality*/
+
+
+
+
+/*Start Subtitle*/
+.subtitle {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    padding: 1rem 0;
+    background-color: var(--download-color);
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.subtitle a {
+    font-size: 1.6rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.subtitle a span i {
+    font-size: 2.3rem;
+    margin-right: 1rem;
+}
+
+.subtitle:hover {
+    background-color: #fff;
+}
+
+.subtitle:hover a {
+    color: #000;
+}
+/*End Subtitle*/
+
+
+
+
+/*Start Responsive*/
+@media screen and (min-width: 460px) {
+    .navigation-bar {
+        padding: 0 2.3rem;
+    }
+
+    .nav-items {
+        margin-right: 2.5rem;
+    }
+
+    .nav-link i {
+        font-size: 2.5rem;
+    }
+
+    .details {
+        width: 40rem;
+        height: 34rem;
+        margin-bottom: 2rem;
+    }
+
+    .synopsis {
+        transform: translateY(-53%);
+    }
+
+    .scene {
+        transform: translateY(-45%);
+    }
+
+    .scene > img {
+        width: 13.5rem;
+        height: 10rem;
+        margin-right: 1rem;
+    }
+
+    .watch video,
+    .image img {
+        max-width: 45rem;
+    }
+
+    .image img {
+        height: 25rem;
+    }
+
+    .watch i,
+    .image i {
+        margin-left: 43rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .navigation-bar {
+        height: 6rem;
+        padding: 0 5rem;
+    }
+
+    .poster {
+        width: 28rem;
+        height: 50rem;
+    }
+
+    .poster > img {
+        height: 37rem;
+    }
+
+    .mobile-title {
+        margin-top: 2.5rem;
+    }
+
+    .details {
+        width: 55rem;
+    }
+
+    .synopsis {
+        transform: translateY(-60%);
+    }
+
+    .scene {
+        transform: translateY(-35%);
+    }
+
+    .scene > img {
+        width: 18rem;
+        height: 12rem;
+    }
+
+    .more-info {
+        width: 55rem;
+        height: 63rem;
+    }
+
+    .dvd {
+        width: 85%;
+        height: 30rem;
+    }
+
+    .quality h1 {
+        font-size: 3rem;
+        height: 5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .subtitle {
+        width: 70%;
+    }
+
+    .subtitle a span i {
+        margin-right: 1.5rem;
+    }
+
+    .watch video,
+    .image img {
+        max-width: 55rem;
+    }
+
+    .image img {
+        height: 35rem;
+    }
+
+    .watch i,
+    .image i {
+        margin-left: 53rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .navigation-bar {
+        height: 7rem;
+        padding: 0 6rem;
+    }
+
+    .logo img {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-right: .8rem;
+    }
+
+    .logo span {
+        font-size: 3rem;
+    }
+
+    .logo span > span {
+        font-size: 2rem;
+    }
+
+    .nav-items {
+        margin-right: 3rem;
+    }
+
+    .nav-link i {
+        font-size: 3.2rem;
+    }
+
+    .mobile-title h1 {
+        font-size: 4rem;
+    }
+
+    .details {
+        width: 70rem;
+        height: 34.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .synopsis {
+        transform: translateY(-73%);
+    }
+
+    .scene {
+        transform: translateY(-28%);
+    }
+
+    .scene > img {
+        width: 22rem;
+        height: 15rem;
+        margin-right: 1.2rem;
+    }
+
+    .watch video,
+    .image img {
+        max-width: 70rem;
+    }
+
+    .image img {
+        height: 45rem;
+    }
+
+    .watch i,
+    .image i {
+        margin-left: 68rem;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .mobile-title {
+        top: -100%;
+    }
+
+    .content {
+        margin-top: -8rem;
+        flex-direction: row;
+    }
+
+    .poster {
+        width: 25rem;
+        height: 50rem;
+        margin-right: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .poster > img {
+        height: 35rem;
+    }
+
+    .details {
+        width: 35rem;
+        height: 50rem;
+        margin-right: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .title {
+        transform: translateX(0);
+        margin-bottom: 1rem;
+    }
+
+    .title h1 {
+        font-family: var(--title-font);
+        font-size: 3.5rem;
+        text-transform: uppercase;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+    }
+
+    .title h3 {
+        font-size: 1.5rem;
+    }
+
+    .synopsis {
+        transform: translateY(0);
+        margin-bottom: 1rem;
+    }
+
+    .synopsis h1 {
+        font-size: 2.3rem;
+    }
+
+    .synopsis p {
+        font-size: 1.2rem;
+    }
+
+    .trailer {
+        transform: translateY(0);
+        margin-bottom: 1.5rem;
+    }
+
+    .trailer a {
+        font-size: 2rem;
+    }
+
+    .trailer a span i {
+        font-size: 3.5rem;
+    }
+
+    .scene {
+        transform: translateY(0);
+    }
+
+    .scene > img {
+        width: 11rem;
+        height: 8rem;
+        margin-right: .5rem;
+    }
+
+    .more-info {
+        width: 30rem;
+        height: 50rem;
+    }
+
+    .dvd {
+        height: 18rem;
+    }
+
+    .quality h1 {
+        font-size: 2.2rem;
+        height: 4rem;
+        padding-bottom: .8rem;
+    }
+
+    .subtitle {
+        width: 80%;
+        padding: .5rem 0;
+    }
+
+    .subtitle a span i {
+        margin-right: 1rem;
+    }
+
+    .watch video {
+        max-width: 80rem;
+    }
+
+    .watch i {
+        margin-left: 78rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-items {
+        margin-right: 5rem;
+    }
+
+    .details {
+        width: 50rem;
+    }
+
+    .synopsis,
+    .trailer {
+        margin-bottom: 2rem;
+    }
+
+    .synopsis p {
+        font-size: 1.5rem;
+    }
+
+    .scene > img {
+        width: 15rem;
+        height: 10rem;
+        margin-right: 2rem;
+    }
+
+    .watch video,
+    .image img {
+        max-width: 90rem;
+    }
+
+    .image img {
+        height: 50rem;
+    }
+
+    .watch i,
+    .image i {
+        margin-left: 88rem;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .navigation-bar {
+        padding: 0 8rem;
+    }
+
+    .logo img {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1rem;
+    }
+
+    .logo span {
+        font-size: 4rem;
+    }
+
+    .logo span > span {
+        font-size: 2.5rem;
+    }
+
+    .details {
+        width: 60rem;
+        margin-right: 10rem;
+    }
+
+    .scene > img {
+        width: 18rem;
+        height: 12rem;
+        margin-right: 3rem;
+    }
+}
+/*End Responsive*/

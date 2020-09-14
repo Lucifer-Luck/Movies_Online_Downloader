@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Scoob!</title>
+
+        <link rel="stylesheet" href="icons/all.css">
+        <link rel="stylesheet" href="@global_styles.css">
+        <link rel="stylesheet" href="css/$_header.css">
+        <link rel="stylesheet" href="css/$_footer.css">
+        <link rel="stylesheet" href="css/$_click.css">
+        <link rel="stylesheet" href="css/scoob!.css">
+
+        <style>
+            .background-image,
+            .background-image::before {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .background-image {
+                background: url('images/scoob!/bg.jpg') center no-repeat fixed;
+                background-size: cover;
+            }
+
+            .background-image::before {
+                content: '';
+                background-color: rgba(0, 0, 0, .85);
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "background-image"></div>
+
+        <header>
+            <div class = "navigation-bar">
+                <div class = "logo">
+                    <img src="images/logo.png" alt="">
+                    <span><span>2020</span>Movies</span>
+                </div>
+
+                <ul class = "nav-list">
+                    <li class = "nav-items">
+                        <a href="$_index.html" class="nav-link" title = "Home">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+
+                    <li class = "nav-items">
+                        <a href="$browse_movies_pt1.html" class="nav-link" title = "Browse Movies">
+                            <i class="fas fa-list-alt"></i>
+                        </a>
+                    </li>
+
+                    <li class = "nav-items">
+                        <a href="$log_in.html" class="nav-link" title = "Login">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class = "hero">
+                <div class = "mobile-title">
+                    <h1>Scoob!</h1>
+                    <h2>2020</h2>
+                    <h3>Animation / Comedy / Horror</h3>
+                </div>
+
+                <div class = "content">
+                    <div class = "poster">
+                        <img src="images/scoob!/scoob!.jpg" alt="">
+
+                        <div class = "social-media">
+                            <a href = "#" title = "Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a href = "#" title = "Twitter">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+
+                            <a href = "#" title = "Google Plus">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+
+                        <div class = "download">
+                            <a href="download/1080p/Scoob! (2020) 1080p WebRip x264.torrent" title = "Click to Download" download>
+                                <span>
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class = "details">
+                        <div class="title">
+                            <h1>Scoob!</h1>
+                            <h2>2020</h2>
+                            <h3>Animation / Comedy / Horror</h3>
+                        </div>
+
+                        <div class = "synopsis">
+                            <h1>Synopsis:</h1>
+                            <p>
+                                With hundreds of cases solved and adventures shared, Scooby
+                                and the gang face their biggest, most challenging mystery
+                                ever -- a plot to unleash the ghost dog Cerberus upon the
+                                world. As they race to stop this global dog-pocalypse, the
+                                gang discovers that Scooby has a secret legacy and an epic
+                                destiny greater than anyone could have imagined.
+                            </p>
+                        </div>
+
+                        <div class = "trailer">
+                            <a href="#" title = "Click to Trailer" onclick = "videoClick()">
+                                <span>
+                                    <i class="far fa-play-circle"></i>
+                                </span>
+                                Watch the Trailer
+                            </a>
+                        </div>
+
+                        <div class = "scene">
+                            <img src="images/scoob!/sc1.jpg" alt="" onclick = "firstClick()">
+                            <img src="images/scoob!/sc2.jpeg" alt="" onclick = "secondClick()">
+                            <img src="images/scoob!/sc3.jpeg" alt="" onclick = "thirdClick()">
+                        </div>
+                    </div>
+
+                    <div class = "more-info">
+                        <div class = "dvd">
+                            <img src="images/scoob!/dvd.jpg" alt="">
+                        </div>
+
+                        <div class = "quality">
+                            <h1>Available In:</h1>
+
+                            <a href="download/720p/Scoob! (2020) 720p WebRip x264.torrent" title = "720p.BluRay" download>
+                                <span>
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                720p BluRay
+                            </a>
+
+                            <a href="download/1080p/Scoob! (2020) 1080p WebRip x264.torrent" title = "1080p.BluRay" download>
+                                <span>
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                1080p BluRay
+                            </a>
+
+                            <a href="#" title = "2160p.BluRay">
+                                <span>
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                2160p BluRay
+                            </a>
+                        </div>
+
+                        <div class = "subtitle">
+                            <a href="#" title = "Click to Download">
+                                <span>
+                                    <i class="fas fa-download"></i>
+                                    <i class="fas fa-closed-captioning"></i>
+                                </span>
+                                Download Subtitles
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="watch">
+                <i class="fas fa-times" onclick = "videoClick()"></i>
+                <video src = "videos/scoob!.mp4" controls></video>
+            </div>
+
+            <div class = "image first">
+                <i class="fas fa-times" onclick = "firstClick()"></i>
+                <img src="images/scoob!/sc1.jpg" alt="">
+            </div>
+
+            <div class = "image second">
+                <i class="fas fa-times" onclick = "secondClick()"></i>
+                <img src="images/scoob!/sc2.jpeg" alt="">
+            </div>
+
+            <div class = "image third">
+                <i class="fas fa-times" onclick = "thirdClick()"></i>
+                <img src="images/scoob!/sc3.jpeg" alt="">
+            </div>
+        </main>
+
+        <footer>
+            <div class = "creator">
+                <p>&copy; 2020 - Created by Mark Angel Victorio</p>
+            </div>
+        </footer>
+
+        <script src = "scripts/click.js"></script>
+    </body>
+</html>

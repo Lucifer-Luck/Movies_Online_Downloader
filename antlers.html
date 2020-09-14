@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Antlers</title>
+
+        <link rel="stylesheet" href="icons/all.css">
+        <link rel="stylesheet" href="@global_styles.css">
+        <link rel="stylesheet" href="css/$_header.css">
+        <link rel="stylesheet" href="css/$_footer.css">
+        <link rel="stylesheet" href="css/$_click.css">
+        <link rel="stylesheet" href="css/antlers.css">
+
+        <style>
+            .background-image,
+            .background-image::before {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .background-image {
+                background: url('images/antlers/bg.jpg') center no-repeat fixed;
+                background-size: cover;
+            }
+
+            .background-image:before {
+                content: '';
+                background-color: rgba(0, 0, 0, .7);
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "background-image"></div>
+
+        <header>
+            <div class = "navigation-bar">
+                <div class = "logo">
+                    <img src="images/logo.png" alt="">
+                    <span><span>2020</span>Movies</span>
+                </div>
+
+                <ul class = "nav-list">
+                    <li class = "nav-items">
+                        <a href="$_index.html" class = "nav-link" title = "Home">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+
+                    <li class = "nav-items">
+                        <a href="$browse_movies_pt1.html" class = "nav-link" title = "Browse Movies">
+                            <i class="fas fa-list-alt"></i>
+                        </a>
+                    </li>
+
+                    <li class = "nav-items">
+                        <a href="$log_in.html" class = "nav-link" title = "Login">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class = "hero">
+                <div class = "mobile-title">
+                    <h1>Antlers</h1>
+                    <h2>2020</h2>
+                    <h3>Horror / Drama / Thriller</h3>
+                </div>
+
+                <div class = "content">
+                    <div class = "poster">
+                        <img src="images/antlers/antlers.jpg" alt="">
+
+                        <div class = "social-media">
+                            <a href="#" title = "Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" title = "Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+
+                            <a href="#" title = "Google Plus">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+
+                        <div class = "download">
+                            <a href="#" title = "Click to Download">
+                                <span>
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class = "details">
+                        <div class = "title">
+                            <h1>Antlers</h1>
+                            <h2>2020</h2>
+                            <h3>Horror / Drama / Thriller</h3>
+                        </div>
+
+                        <div class = "synopsis">
+                            <h1>Synopsis:</h1>
+                            <p>
+                                A mysterious creature escapes from its
+                                confines to wreak bloody havoc in a
+                                small Oregon town.
+                            </p>
+                        </div>
+
+                        <div class = "trailer">
+                            <a href="#" title = "Click to Trailer" onclick = "videoClick()">
+                                <span>
+                                    <i class="far fa-play-circle"></i>
+                                </span>
+                                Watch the Trailer
+                            </a>
+                        </div>
+
+                        <div class = "scene">
+                            <img src="images/antlers/sc1.png" alt="" onclick = "firstClick()">
+                            <img src="images/antlers/sc2.jpg" alt="" onclick = "secondClick()">
+                            <img src="images/antlers/sc3.jpg" alt="" onclick = "thirdClick()">
+                        </div>
+                    </div>
+
+                    <div class = "more-info">
+                        <div class = "dvd">
+                            <img src="images/antlers/dvd.jpg" alt="">
+                        </div>
+
+                        <div class = "quality">
+                            <h1>Available In:</h1>
+
+                            <a href="#" title = "720p.BluRay">
+                                <span>
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                720p BluRay
+                            </a>
+
+                            <a href="#" title = "1080p.BluRay">
+                                <span>
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                1080p BluRay
+                            </a>
+
+                            <a href="#" title = "2160p.BluRay">
+                                <span>
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                2160p BluRay
+                            </a>
+                        </div>
+
+                        <div class = "subtitle">
+                            <a href="#" title = "Click to Download">
+                                <span>
+                                    <i class="fas fa-download"></i>
+                                    <i class="fas fa-closed-captioning"></i>
+                                </span>
+                                Download Subtitles
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "watch">
+                <i class="fas fa-times" onclick = "videoClick()"></i>
+                <video src="videos/antlers.mp4" controls></video>
+            </div>
+
+            <div class = "image first">
+                <i class="fas fa-times" onclick = "firstClick()"></i>
+                <img src="images/antlers/sc1.png" alt="">
+            </div>
+
+            <div class = "image second">
+                <i class="fas fa-times" onclick = "secondClick()"></i>
+                <img src="images/antlers/sc2.jpg" alt="">
+            </div>
+
+            <div class = "image third">
+                <i class="fas fa-times" onclick = "thirdClick()"></i>
+                <img src="images/antlers/sc3.jpg" alt="">
+            </div>
+        </main>
+
+        <footer>
+            <div class = "creator">
+                <p>&copy; 2020 - Created by Mark Angel Victorio</p>
+            </div>
+        </footer>
+
+        <script src = "scripts/click.js"></script>
+    </body>
+</html>

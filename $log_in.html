@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Login</title>
+        
+        <link rel="stylesheet" href="icons/all.css">
+        <link rel="stylesheet" href="@global_styles.css">
+        <link rel="stylesheet" href="css/$_header.css">
+        <link rel="stylesheet" href="css/$_footer.css">
+        <link rel="stylesheet" href="css/@log_in.css">
+    </head>
+    <body>
+        <div class="slide-background">
+            <div class="slide-pic one">
+                <img src="images/.slideshow/sd7.jpg" alt="">
+            </div>
+
+            <div class="slide-pic two">
+                <img src="images/.slideshow/sd8.jpg" alt="">
+            </div>
+
+            <div class="slide-pic three">
+                <img src="images/.slideshow/sd9.jpg" alt="">
+            </div>
+
+            <div class="slide-pic four">
+                <img src="images/.slideshow/sd10.jpeg" alt="">
+            </div>
+
+            <div class="slide-pic five">
+                <img src="images/.slideshow/sd11.jpg" alt="">
+            </div>
+
+            <div class="slide-pic six">
+                <img src="images/.slideshow/sd12.jpeg" alt="">
+            </div>
+        </div>
+
+        <header>
+            <div class="navigation-bar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                    <span><span>2020</span>Movies</span>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-items">
+                        <a href="$_index.html" class="nav-link" title = "Home">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-items">
+                        <a href="$browse_movies_pt1.html" class="nav-link" title = "Browse Movies">
+                            <i class="fas fa-list-alt"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-items">
+                        <a href="$log_in.html" class="nav-link" title = "Login">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="form-box">
+                    <div class="btn-choose">
+                        <button class = "btn-login" onclick = "login()">Login</button>
+                        <button class = "btn-register" onclick = "register()">Register</button>
+                    </div>
+
+                    <div class="input-area">
+                        <div class="login">
+                            <h1>Login</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+
+                            <div class="username">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder = "username or email">
+                            </div>
+
+                            <div class="password">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder = "password">
+                            </div>
+
+                            <p class = "forgot-me">Forgot Password?</p>
+                            <button>Login</button>
+                        </div>
+
+                        <div class="register">
+                            <h1>Register</h1>
+                            <p>Enter your personal details and start journey with your movies</p>
+
+                            <div class="name">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder = "Enter your Name">
+                            </div>
+
+                            <div class="email">
+                                <i class="fas fa-id-badge"></i>
+                                <input type="text" placeholder = "Enter your Email">
+                            </div>
+
+                            <div class="password">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder = "Enter your Password">
+                            </div>
+
+                            <button>Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="creator">
+                <p>&copy; 2020 - Created by Mark Angel Victorio</p>
+            </div>
+        </footer>
+
+        <script src = "scripts/slide.js"></script>
+    </body>
+</html>

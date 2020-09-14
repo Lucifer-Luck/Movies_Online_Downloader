@@ -1,0 +1,48 @@
+/*Start Click*/
+.image,
+.watch {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1500;
+    visibility: hidden;
+}
+
+.watch.active,
+.first.active,
+.second.active,
+.third.active {
+    visibility: visible;
+}
+
+.watch video,
+.image img {
+    max-width: 30rem;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.image img {
+    height: 20rem;
+}
+
+.watch i,
+.image i {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 28rem;
+    cursor: pointer;
+}
+
+.watch.active video,
+.image.active img {
+    transform: scale(1);
+}
+/*End Click*/
