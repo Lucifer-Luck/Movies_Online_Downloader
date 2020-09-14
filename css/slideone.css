@@ -67,6 +67,16 @@
 
 
 /*Start Animation*/
+@-webkit-keyframes slideMe {
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
 @keyframes slideMe {
     20% {
         opacity: 1;
@@ -74,6 +84,12 @@
 
     50% {
         opacity: 0;
+    }
+}
+
+@-webkit-keyframes zoomMe {
+    100% {
+        transform: scale(1.6);
     }
 }
 
